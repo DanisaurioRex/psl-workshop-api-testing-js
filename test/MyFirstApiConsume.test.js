@@ -91,7 +91,7 @@ describe('First Api Tests', () => {
 
       it('Consume DELETE Service', () => {
         const body = {
-          name: 'John',
+          name: 'Daniel',
           age: 31,
           city: 'New York'
         };

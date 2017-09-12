@@ -1,15 +1,15 @@
 env:
-  - ACCESS_TOKEN="---"
+  global:
+    secure: iln8KsVoAKzS4fNIVveEpM1eHCaTZvmt1pCIWrH5pWclLL7ZcpDcSh/jX8UipDMdN33ZEq3Y/0WitphsrtD1mrrghiDWLsGnZb8W1rPuNLXdZ1hKyou/X6omps+0xVil4G4bkWWNtZN63CQt928NZ/3P4daZP+h2fUBwUlQC/eW8CVMYLnnnRmLqF5dVi8Lvf459kCTUsmPZ9+MehxFPtiUo6xYeQPF5J2ADkq34CkoBJCqcw6cN04K9VBg1eRASJk2D1HKZTTI9xBPhRpQK6WvRXNDMnWY9Q/GHN83XkCL8xOO0C2A3A8v0nZSyuoVfVekVPGWVJBtHcf/k4NEHdYP4szROz5QTVu2QeFJDHzxEISUnZyg/Z8B2I/PnfVF8pVgZTGJlRoHTEP7nlpwexYPRSQAsp8RAv0E5xgUbYt89vsW7fpqQy7p8dN5iTA5UEPUHNbbwhxpG7W/p9AXF4RBObyZtXy1PkhvTHHnOV8GVkCle3nQui/6kBUKQU7rogacYdcNONXn3cMj5tjHkAMh5wCFxJxys6qN2+HtDJXV4NvQttxTsA+L/DmpTiga7ZW6L06QHpl9A4r+0oY+x9UZqUFlU1ijkTF8CMUsD3z7TVwW0p6qTYFdKqMN0/Zxo87XPTXIFAFgdEggK18sswAeqCai+9/IcgqxA6Uu2mZI=
 language: node_js
 cache:
- directories:
-   - node_modules
+  directories:
+  - node_modules
 notifications:
- email: false
+  email: false
 node_js:
- - '7'
- - '6'
+- '7'
+- '6'
 branches:
- except:
-   - /^v\d+\.\d+\.\d+$/
-   
+  except:
+  - /^v\d+\.\d+\.\d+$/

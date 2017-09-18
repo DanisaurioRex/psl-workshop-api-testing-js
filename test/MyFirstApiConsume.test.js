@@ -102,4 +102,19 @@ describe('First Api Tests', () => {
         expect(response.body.json).to.eql(body);
       });
   });
+
+  it('Consume redirect Service', () => {
+    const query = {
+      url: 'www.example.com',
+      status_code: 307
+    };
+
+    return agent
+      .get('https://httpbin.org/get')
+      .redirects(2)
+      .query(query)
+      .then((response) => {
+        expect(response.status).to.equal(statusCode.OK);
+      });
+  });
 });
